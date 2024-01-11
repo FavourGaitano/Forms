@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Forms</h2>
+    <form action="" target="_blank" method="post" autocomplete ="on">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname"> First Name :</label><br>
+            <input type ="text" id="fname" name="fname" value ="first name"><br>
+            <label for="lname">Last Name :</label><br>
+            <input type ="text" id="lname" name="lname" value ="last name"><br>
+            <label for ="pwd">Password :</label><br>
+            <input type ="password" id="pwd" name="pwd" value ="password"><br>
+            <input type ="submit" value ="Submit">
+            <input type ="reset" value ="Reset">
+        </fieldset>
+        <p>Select one colour:</p>
+        <input type="radio" id="red" name="colour" value="red">
+        <label for = "red">Red</label><br>
+        <input type="radio" id="blue" name="colour" value="blue">
+        <label for = "blue">Blue</label><br>
+        <input type="radio" id="green" name="colour" value="green">
+        <label for = "green">Green</label><br>
+
+        <p>Why did you choose the above colour?</p>
+        <input type="checkbox" id="myreason" name="favourite" value="dream">
+        <label for="myreason">It's my favourite colour</label><br>
+        <input type ="checkbox" id="myreason1" name ="best" value="best1">
+        <label for="myreason1">It's a random choice</label><br>
+        <input type ="checkbox" id="myreason2" name ="best3" value="best2">
+        <label for="myreason2">I own something sentimental with that colour</label><br>
+
+        <div>
+            <label for ="cars">Choose your dream car</label>
+            <select id="cars" name="cars">
+                <option value="Bughatti Veyron">Bughatti Veyron</option>
+                <option value="Bughatti Chiron">Bughatti Chiron</option>
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="ferrari">Ferrari</option>
+            <input type="submit" value ="Submit">
+        </div>
+        <div>
+            <p> Why did you choose the above car?</p>
+            <textarea name="message" rows="10" cols="40"> Describe in your own words below</textarea>
+        </div>
+        <div>
+            <p> Are you content with your answer?</p>
+            <button type="button" onclick="alert('You are content')">Yes</button>
+        </div>
+        <div>
+            <input list = "cars">
+            <datalist id ="cars">
+                <option value ="Bughatti Veyron">
+                <option value ="Bughatti Chiron">
+                <option value ="BMW">
+                <option value ="Mercedes">
+                <option value ="Ferrari">
+            </datalist>
+        </div>
+    </form>
+</body>
+</html>
